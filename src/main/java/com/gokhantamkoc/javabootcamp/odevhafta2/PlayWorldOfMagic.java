@@ -59,10 +59,6 @@ public class PlayWorldOfMagic implements CommandLineRunner {
 			}
 		}
 		// ______ SON _______ Kodunuz burada bitmeli
-		/* NOT: ______ BASLANGIC _______ ve ______ SON _______
-		 * arasina istediginiz kadar sayida satir ekleyebilirsiniz.
-		 */
-		// ______ SON _______ Kodunuz burada bitmeli
 		/* NOT: ______ BASLANGIC _______ ve ______ SON _______ 
 		 * arasina istediginiz kadar sayida satir ekleyebilirsiniz.
 		 */
