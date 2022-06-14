@@ -43,7 +43,25 @@ public class PlayWorldOfMagic implements CommandLineRunner {
 		
 		int spellsUsed = 0;
 		// ______ BASLANGIC _______ Kodunuz buradan baslamali
-		
+		// Find the largest number in spell list for maximum damage at one time
+		float maxSpellDamage = 0;
+		for(float damage :spellDamageInfo){
+			if (maxSpellDamage < damage){
+				maxSpellDamage = damage;
+			}
+		}
+		// loop for every boss's health power
+		for (int i=0 ;i<bossHPs.length;i++){
+			float bossPower = bossHPs[i]; // get i. boss's health
+			while (bossPower>0){ // attack i. boss until the power is zero or less then zero
+				spellsUsed++;
+				bossPower -= maxSpellDamage;
+			}
+		}
+		// ______ SON _______ Kodunuz burada bitmeli
+		/* NOT: ______ BASLANGIC _______ ve ______ SON _______
+		 * arasina istediginiz kadar sayida satir ekleyebilirsiniz.
+		 */
 		// ______ SON _______ Kodunuz burada bitmeli
 		/* NOT: ______ BASLANGIC _______ ve ______ SON _______ 
 		 * arasina istediginiz kadar sayida satir ekleyebilirsiniz.
